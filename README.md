@@ -1,4 +1,4 @@
-# chatbot2
+# chatbot
 
 This project was generated using [Bocadillo CLI][repo] version 0.2.2.
 
@@ -17,7 +17,7 @@ poetry install
 Start the uvicorn server:
 
 ```bash
-uvicorn chatbot2.asgi:app
+uvicorn chatbot.asgi:app
 ```
 
 To enable hot reload, use the `--reload` option.

@@ -1,5 +1,7 @@
 FROM python:3.7
 
+WORKDIR /app
+
 # Install poetry
 RUN pip install poetry && poetry config settings.virtualenvs.create false
 
@@ -11,7 +13,7 @@ RUN poetry install --no-interaction
 
 # Add everything else the app may need (including templates)
 # into the container.
-COPY . ./
+COPY . .
 
 EXPOSE 8000
 

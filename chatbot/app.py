@@ -11,6 +11,11 @@ async def converse(ws):
         await ws.send(message)
 
 
+@app.route("/")
+async def home(req, res):
+    res.text = "Hello, World"
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("chatbot.asgi:app", host="0.0.0.0", reload=True)

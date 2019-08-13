@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "env": {
-                "PYTHONPATH": "/app"
+                "PYTHONPATH": "/workspaces/chatbot"
             },
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/chatbot/app.py",

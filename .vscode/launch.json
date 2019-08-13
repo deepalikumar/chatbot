@@ -8,6 +8,9 @@
             "name": "Python: uvicorn",
             "type": "python",
             "request": "launch",
+            "env": {
+                "PYTHONPATH": "/app"
+            },
             "cwd": "${workspaceRoot}",
             "program": "${workspaceRoot}/chatbot/app.py",
             "console": "internalConsole"

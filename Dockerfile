@@ -6,14 +6,14 @@ WORKDIR /app
 RUN pip install poetry && poetry config settings.virtualenvs.create false
 
 # Add requirements now (allows caching of pip dependencies for faster builds)
-COPY poetry.lock pyproject.toml ./
+COPY poetry.lock pyproject.toml /app/
 
 # Install requirements
 RUN poetry install --no-interaction
 
 # Add everything else the app may need (including templates)
 # into the container.
-COPY . .
+COPY . /app
 
 EXPOSE 8000
 

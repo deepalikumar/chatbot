@@ -5,15 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: bocadillo",
+            "name": "Python: uvicorn",
             "type": "python",
             "request": "launch",
-            "module": "uvicorn",
-            "args": [
-                "chatbot.asgi:app",
-                "--reload"
-            ],
-            "console": "integratedTerminal"
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/chatbot/app.py",
+            "console": "internalConsole"
         }
     ]
 }

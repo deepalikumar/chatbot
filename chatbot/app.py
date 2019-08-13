@@ -13,9 +13,9 @@ async def converse(ws):
 
 @app.route("/")
 async def home(req, res):
-    res.text = "Hello, World"
+    res.text = "Hello, World!"
 
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("chatbot.asgi:app", host="0.0.0.0", reload=True)
+    uvicorn.run("chatbot.asgi:app", host="0.0.0.0")
